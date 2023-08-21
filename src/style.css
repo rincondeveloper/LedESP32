@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #0b0b0d;
+}
+
+
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 90vh;
+}
+
+
+/* H1 */
+
+h1 {
+    font-size: 7em;
+    color: white;
+}
+.encendido-h1.active {
+    display: none;
+}
+
+
+/* I */
+
+
+i {
+    font-size: 10em;
+    color: gray;
+}
+i.active {
+    color: #ffe922;
+}
+
+/* BUTTONS */
+.btns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 2em;
+}
+button {
+    width: 7em;
+    height: 2.5em;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 2em;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+    padding: 0.5em;
+}
+button:hover {
+    background-color: rgb(101, 18, 255);
+    border: none;
+}
+
+
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    i {
+        font-size: 6em;
+    }
+}
